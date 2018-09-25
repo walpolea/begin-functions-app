@@ -22,7 +22,7 @@ function route (req, res) {
   
   let html = `
     <h1>Session state</h1>
-    <pre>${req.session}</pre>
+    <pre>${JSON.stringify(req.session)}</pre>
   `;
   
   console.log(JSON.stringify(req, null, 2))
